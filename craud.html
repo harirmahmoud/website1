@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .photos img{
+        width: 150px;
+        height: 150px;
+        border: 5px solid #aaa;
+    }
+    .photos img:hover{
+        cursor: pointer;
+        
+        border: 5px solid #080;
+    }
+    .main img{
+        width: 730px;
+        height: 730px;
+        border: 5px solid #aaa;
+    }
+    body{
+        width: 2000px;
+        height: 2000px;
+    }
+    #up{
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #fa0;
+        cursor: pointer;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="gallary" >
+<div class="photos">
+    <img onclick="main.src=this.src" src="iphone/iphone16.jpg" alt="...">
+    <img src="iphone/iphone15.jpg" onclick="main.src=this.src" alt="...">
+    <img src="iphone/iphone14.jpg" onclick="main.src=this.src" alt="...">
+    <img src="iphone/iphone13.jpg" alt="..." onclick="main.src=this.src">
+</div>
+<div class="main">
+    <img src="iphone/iphone16.jpg" name="main" alt="...">
+</div>
+<div class="photos">
+    <img onmouseenter="main.src=this.src" src="iphone/iphone16.jpg" alt="...">
+    <img src="iphone/iphone15.jpg" onmouseenter="main.src=this.src" alt="...">
+    <img src="iphone/iphone14.jpg" onmouseenter="main.src=this.src" alt="...">
+    <img src="iphone/iphone13.jpg" alt="..." onmouseenter="main.src=this.src">
+</div>
+    </div>
+<button id="up">^</button>
+<input type="text" placeholder="open" id="txt">
+
+
+    <script src="craud.js"></script>
+</body>
+</html>
